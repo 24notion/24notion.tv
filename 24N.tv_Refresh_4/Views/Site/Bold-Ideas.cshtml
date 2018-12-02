@@ -1,0 +1,191 @@
+﻿@{
+    ViewBag.Title = "Bold Ideas";
+}
+
+<section id="page" class="boldideas">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            { "TitleContent", @"
+                <h5>
+                    <br><br><br>
+                    Our integration of creativity and innovation develops
+                    our clients brands and also gives back to the global 
+                    community.  Our detail-oriented view on the bigger picture
+                    is how we know we will continue to grow and
+                    continue to help you and your companies grow. 
+                </h5>
+            " },
+            { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })
+    
+    <div id="content" class="notosans-medium">
+        <div id="boldideas_title">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Bold Ideas" } })
+            
+            <style>
+                .brick {
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 5;
+                }
+                .brick .brick-detail {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    color: #eee;
+                    background: #222;
+                }
+            </style>
+
+            <div class="container-fluid pg-section-content">
+                <div class="row">
+                    <div id="tilecontainer" class="col-sm-offset-1 col-sm-10 text-center">
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img class="brick-image" width="100%" src="~/Content/images/boldideas/01gabby.jpg" />
+                            <figcaption class="brick-detail">Adidas Millenial Campaign: video and branding campaign</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/02bigdata.jpg" />
+                            <figcaption class="brick-detail">Adobe: Big data digital marketing</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/01daley.jpg" />
+                            <figcaption class="brick-detail">Daley: Digital & Social Rebrand</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/02jill.jpg" />
+                            <figcaption class="brick-detail">Adobe Summit: High Tech/Telco Strategic & Interactive Marketing</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/03sss.jpg" />
+                            <figcaption class="brick-detail">Girls Inc: Philanthropy/Fundraising Gala- an Integrated marketing Comm.</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/03adobe.jpg" />
+                            <figcaption class="brick-detail">Adobe: CMO Thought leadership & Experiential Marketing</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/04b4.jpg" />
+                            <figcaption class="brick-detail">B4Gives integrated marketing and social PR engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/04kpmg.jpg">
+                            <figcaption class="brick-detail">KPMG: Social, Thought leadership & Branded Event Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w3">
+                            <img width="100%" src="~/Content/images/boldideas/05risecontent.jpg" />
+                            <figcaption class="brick-detail">Adobe: CMO- The Rise of Content Marketing</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w3">
+                            <img width="100%" src="~/Content/images/boldideas/06theboss.jpg" />
+                            <figcaption class="brick-detail">UMG-Rick Ross: Digital engagement and presence</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/05etc.jpg">
+                            <figcaption class="brick-detail">ETC: Entertainment Technology Center founded by George Lucas- an Integrated Marketing/Rebrand/Social/PR & Digital Presence</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/07eco.jpg" />
+                            <figcaption class="brick-detail">CGT: Columbia Green Technology- Integrated Marketing/Brand/Digital/PR/Social Campaign</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/09buckle.jpg" />
+                            <figcaption class="brick-detail">CMA: Country Music Awards 2014-“Buckle Up” Campaign for Celebrity engagement- Benefiting ChildHelp</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/08vipclub.jpg" />
+                            <figcaption class="brick-detail">SM VIP: Thought Leadership Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w3">
+                            <img width="100%" src="~/Content/images/boldideas/10fashion.jpg" />
+                            <figcaption class="brick-detail">Fashion Week: Integrated Creative/Brand Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/11video.jpg" />
+                            <figcaption class="brick-detail">TAO: Tech Video- Behind the Scene</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/12techaward.jpg" />
+                            <figcaption class="brick-detail">Tech Awards Social Lounge</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/13mobile.jpg" />
+                            <figcaption class="brick-detail">Adobe: Mobile Apps</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/14alist.jpg" />
+                            <figcaption class="brick-detail">#B4Gives Press A List: Primetime Emmy Coverage & Experiential Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/06promtheus.jpg" />
+                            <figcaption class="brick-detail">ETcentric: An Exclusive Digital Media Publication</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/07biologic.jpg">
+                            <figcaption class="brick-detail">Bio Aqua: Product placement & sponsorship</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/08notes.jpg">
+                            <figcaption class="brick-detail">40notes: Personalized Digital Presence</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/09tranquility.jpg">
+                            <figcaption class="brick-detail">Oracle/KPMG: Social Lounge</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/10rubiks.jpg">
+                            <figcaption class="brick-detail">Adobe: B2B/SAP Visual Infographics & Event Support</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/11crowdtech.jpg">
+                            <figcaption class="brick-detail">Tech Awards 2014: Event and Media Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/12social.jpg">
+                            <figcaption class="brick-detail">Intel and KPMG: Marketing Collaterals and Social Presence</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/13logos.jpg">
+                            <figcaption class="brick-detail">Media Brand Support and Advertising/Marketing Engagement</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick w2">
+                            <img width="100%" src="~/Content/images/boldideas/14speaking.jpg">
+                            <figcaption class="brick-detail">CTIA/SuperMobility: C-level thought leadership</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/15aeros.jpg">
+                            <figcaption class="brick-detail">Aerosmith: Social Support</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/16guys.jpg">
+                            <figcaption class="brick-detail">B2B Game Plan: Trifecta Marketing and Event support</figcaption>
+                        </figure>
+                        <figure class="slide-cap cap-bottom brick">
+                            <img width="100%" src="~/Content/images/boldideas/17cio.jpg">
+                            <figcaption class="brick-detail">CIO Summit: C-Level Thought Leadership</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_PageFooter")
+</section>
+
+
+@Scripts.Render("~/bundles/packery")
+<script>
+    $(function() {
+        var $container = $('#tilecontainer');
+
+        // Initialize the tiling framework after all images have loaded
+        $container.imagesLoaded(function() {
+            $container.packery({
+                itemSelector: '.brick',
+            });
+        });
+    });
+</script>

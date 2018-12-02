@@ -1,0 +1,28 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+    ViewBag.ExceptionMessage = (@Model != null) ? "Message: " + @Model.Exception.Message : null;
+    ViewBag.ExceptionDetails = (Request.IsLocal) ? ((@Model != null) ? @Model.Exception.StackTrace : null) : "We have reported this issue to the Site Administrator";
+}
+<section id="page" class="error">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            //{ "TitleContent", @"" },
+            //{ "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })   
+    <div id="content" class="notosans-medium">
+        <h2>
+            An error occurred while processing your request.
+        </h2>
+
+        <h3>
+            @ViewData["ExceptionMessage"]
+        </h3>
+
+        <h5 class="notosans-medium">
+            @ViewData["ExceptionDetails"]
+        </h5>
+    </div>
+</section>

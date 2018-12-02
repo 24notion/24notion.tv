@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "VIP";
+}
+
+<section id="page" class="vip">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            { "TitleContent", @"
+                <h6 style='font-size: 18px; font-size: 1.4vw;'>
+                    On behalf of 24Notion, we would like to thank you for a great year.
+                    <br /><br />You’re one of our valued customers, the crème de la crème, our VIP’s…
+                    <br />[you get the picture]
+                    <br /><br />As a token of our appreciation, we want to send you a little something for the holidays. 
+                    <br /><br />How about these fine bottles of <strong>CLASSIC OREGON-STYLE WINES</strong>
+                    <br /><br />Enter your mailing address below and we’ll ship this right to your front door.
+                    <p style='font-size: 64%; color: inherit'>(And don’t worry, your mailing information will stay confidential – we just want to send you some holiday cheer.)</p>
+                </h6>
+            " },
+            { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+    })
+
+    <div id="content" class="notosans-medium">
+        <div id="vip_title">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "thank you" } })
+
+            <div class="container-fluid pg-section-content">
+                <div class="row">
+                    <div class="col-sm-3 text-right" style="padding: 20px 12px 0 20px;">
+                        <img class="img-responsive" src="~/content/images/vip/2015_16.Estate.Sampler.jpg"/>
+                    </div>
+                    <div class="col-sm-9">
+                        <h2><strong class="text-uppercase">CLASSIC OREGON-STYLE WINES OF ESTATE SAMPLER</strong></h2>
+                        <p style="line-height: inherit;">
+                            Give the gift of our classic Oregon-style wines with a duo of 2015 Estate Pinot Noir (91-points Wine Spectator)
+                            and 2016 Estate Chardonnay presented in a custom made wooden box. 
+                        </p>
+                        <br />
+                        <h2><strong class="text-uppercase">WINE SPECS</strong></h2>
+                        <p style="line-height: inherit;">
+                            <strong>2015 Estate Pinot Noir</strong>
+                            <br />
+                            91 points - <em>Wine Spectator</em>
+                            <br />
+                            95 points & Double Gold - San Francisco International Wine Competition
+                            <br /><br />
+                            The 2015 Estate Pinot Noir expresses the terroir of our three vineyards - the original planting by Founder, Jim Bernau 
+                            at the winery in the Salem Hills, Tualatin Estate planted by Oregon wine pioneer Bill Fuller in the foothills of the 
+                            Coastal Range and Elton planted by Dick and Betty O'Brien on the east face of the Eola-Amity Hills. 
+                        </p>
+                        <br />
+                        <p style="line-height: inherit;">
+                            <strong>2016 Estate Chardonnay</strong>
+                            <br />
+                            93 points - <em>Wine Advocate</em>
+                            <br />
+                            "Best Buy" and "Year's Best US Chardonnay" - <em>Wine & Spirits Magazine</em>
+                            <br /><br />
+                            Gold in color, citrus zest and white peach aromas fill the glass and are accented with notes of minerality. The palate 
+                            opens displaying great texture and focus, balancing acidity and complexity of pear, hazelnut and supporting oak 
+                            spicenotes.
+                        </p>
+                        <br />
+                        <p style="line-height: inherit;">
+                            Please note: If you live in any of the states: Utah, Oklahoma, Alabama, Indiana, New Jersey, New Hampshire, West Virginia, Mississippi, Kentucky
+                            then most likely we cannot ship these estate samplers; instead you will receive an amazing gift pack complete with a hand made cutting board
+                            in the shape of the state of Oregon, a hand crafted jar of Marionberry Port Jam and a bottle of Oregon dipping oil.
+                        </p> 
+                        <p class="jotform">
+                            <script type="text/javascript" src="https://form.jotform.com/jsform/83346211517149"></script>
+                        </p>
+                        <h4><strong class="text-uppercase">FUN FACTS/DID YOU KNOW?</strong></h4>
+                        <p style="line-height: inherit;">
+                            We have had a very busy 2018! We crafted 335+ campaigns that drove significant impact, engagement and activations.
+                            We also launched 53+ products and services, 123+ event-based experiential activations, 335 thought leadership 
+                            engagements, and garnered 179 million+ views/impressions per month. Lastly, we achieved an impressive 240% return on 
+                            investment (for some of our clients *wink*)
+                            <br /><br />
+                            24Notion is giving back to the local community as well as supporting global communities – and this work landed us
+                            the #14 ranking in Corporate Social Responsibility (CSR) – Philanthropy by the <em>Portland Business Journal</em>.
+                            We are so grateful for all of the great work that 24Notion has been a part of in 2018.
+                        </p>
+                        <br />
+                        <h2><strong>Happy holidays to you and your loved ones from 24Notion!</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_PageFooter")
+</section>

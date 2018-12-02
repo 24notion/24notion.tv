@@ -1,0 +1,28 @@
+﻿<div class="page-head section-block">
+    <div class="image-area">
+        @if ((@ViewData["TitleImageSrc"] as string) != null)
+        {
+            <img width="1920" height="1080" alt="24Notion" src="@ViewData["TitleImageSrc"]">
+        }
+    </div>
+    <div class="container-fluid content-area">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+                <div class="title bankgothic-light text-center text-bold">
+                    @Html.Raw(ViewData["TitleHeader"])
+                </div>
+                <div class="details white-text-shadow text-right notosans-medium">
+                    @Html.Raw(ViewData["TitleContent"])
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8 text-right sectionnav">
+                <a href="#contenttop" class="nohighlight">
+                    <img class="arrow-down" width="38" height="38" alt="next" src="~/Content/images/arrowdown.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contenttop"></div>
+</div>

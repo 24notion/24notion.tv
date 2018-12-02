@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Updates";
+}
+
+<section id="page" class="updates">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            { "TitleContent", @"
+                <h5>
+                    <br><br><br>
+                    Our greatest asset is giving back to the community. We place a high
+                    premium on people who share our belief in the power of helping for
+                    the greater good. In creating a positive and encouraging work
+                    environment focused on sustaining and giving back to the communities.
+                </h5>
+            " },
+            { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })
+
+    <div id="content" class="notosans-medium">
+        <div id="updates_news">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "News" } })
+
+            <div class="container-fluid pg-section-content">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <table class="table">
+                        @foreach (var item in ViewBag.RssFeed)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="bankgothic-light text-left">
+                                        <h3>
+                                            <b>@item.Title</b>
+                                            <small><a href="@item.Link" target="_blank">more</a>&nbsp;</small>
+                                        </h3>
+                                    </div>
+                                    @*<div>@Html.Raw(item.Encoded)</div>*@
+                                </td>
+                            </tr>
+                        }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_PageFooter")
+</section>

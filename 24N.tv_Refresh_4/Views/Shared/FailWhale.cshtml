@@ -1,0 +1,28 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Not Found";
+    ViewBag.ExceptionMessage = (@Model != null) ?
+        "Message: " + @Model.Exception.Message :
+        "Oops! We couldn't find that page! (<a href=\"/\">Home</a>)";
+    ViewBag.ExceptionDetails = (@Model != null) ? 
+        @Model.Exception.StackTrace : 
+        "In English it means the Page, Address, URL you are looking for has moved without leaving a forwarding address :( We have reported this issue to the Site Administrator.";
+}
+<section id="page" class="error">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            //{ "TitleContent", @"" },
+            //{ "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })    
+    <div id="content" class="notosans-medium">
+        <h2>
+            @Html.Raw(@ViewData["ExceptionMessage"])
+        </h2>
+
+        <h5 class="notosans-medium">
+            @ViewData["ExceptionDetails"]
+        </h5>
+    </div>
+</section>

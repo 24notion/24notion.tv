@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Connect";
+}
+
+<section id="page" class="connect">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            { "TitleContent", @"
+                <h5>
+                    Join our community and receive all of the latest
+                    24Notion news, exclusive content, best practices and
+                    to see what’s happening behind the scenes.
+                </h5>
+                <br />
+                <p>
+                    P: <a href=""tel:+15038962442"">503.896.2442</a><br />
+                    General Inquiries: <a href=""mailto:info@24Notion.tv"">info@24Notion.tv</a><br />
+                    New Business/Partnership: <a href=""mailto:jimmy.park@24notion.tv"">jimmy.park@24notion.tv</a><br />
+                    Press Relations: <a href=""mailto:pr@24notion.tv"">pr@24notion.tv</a><br />
+                    Careers: <a href=""mailto:hr@24notion.tv"">hr@24notion.tv</a><br />
+                </p>
+                <br />
+                <table class=""table hide"">
+                    <tr>
+                        <td>Portland, OR</td>
+                        <td>New York, NY</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <address>
+                                650 NE Holladay Street<br />
+                                Suite 1600<br />
+                                Portland, OR 97232
+                            </address>
+                        </td>
+                        <td>
+                            <address>
+                                80 Broad Street<br />
+                                5th Floor<br />
+                                New York, NY 97214
+                            </address>
+                        </td>
+                    </tr>
+                </table>
+            " },
+            { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })
+    
+    <div id="content" class="notosans-medium">
+        <div id="connect_community">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Behind The Scene" } })
+
+            <div class="container-fluid section-block pg-section-content">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8 text-center">
+                        <div class="image-area">
+                            <img width="1740" height="2842" alt="24Notion" src="~/Content/images/connect/behind_the_scene.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("_PageFooter")
+</section>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+    <!-- bootstrap v3.3.0 -->
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootsidemenu")
+    
+    <!-- Small script to set a global variable with the base url. Running this in head section so variable is set before any other js code runs -->
+    <script type="text/javascript">
+        // Safely using .ready() before including jQuery
+        // http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
+        (function (w, d, u) {
+            w.readyQ = []; w.bindReadyQ = []; function p(x, y) {
+                if (x == "ready") { w.bindReadyQ.push(y); } else { w.readyQ.push(x); }
+            };
+            var a = { ready: p, bind: p };
+            w.$ = w.jQuery = function (f) {
+                if (f === d || f === u) { return a; } else { p(f); }
+            };
+        })(window, document);
+    </script>
+
+    @Scripts.Render("~/bundles/modernizr") 
+</head>
+<body>
+
+    <!-- Navbar
+        ================================================== -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top bankgothic-light" role="navigation">
+        <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="submenu" class="collapse navbar-collapse in">
+                <ul class="nav navbar-nav nav-stacked">
+                    @Html.MenuItemLink("Home", "Index", "Site", null, new { @class = "nohighlight" })
+                    @Html.MenuItemLink("Values", "Values", "Site", null, new { @class = "nohighlight" })
+                    @Html.MenuItemLink("Bold Ideas", "Bold-Ideas", "Site", null, new { @class = "nohighlight" })
+                    @Html.MenuItemLink("Partners", "Partners", "Site", null, new { @class = "nohighlight" })
+                    @Html.MenuItemLink("Updates", "Updates", "Site", null, new { @class = "nohighlight" })
+                    @Html.MenuItemLink("Holidays", "Holiday", "Site", null, new { @class = "nohighlight" })
+                    @*@Html.MenuItemLink("VIP", "Vip", "Site", null, new { @class = "nohighlight" })*@
+                    @Html.MenuItemLink("Connect", "Connect", "Site", null, new { @class = "nohighlight" })
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="site-logo">
+        <a href="/" class="nohighlight">
+            <img width="148" height="69" alt="24Notion" src="~/Content/images/24notion_logo.png">
+        </a>
+    </section>
+    
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        // Load all 'stub' document ready events back into jQuery
+        (function ($, d) {
+            $.each(readyQ, function (i, f) { $(f); });
+            $.each(bindReadyQ, function (i, f) { $(d).bind("ready", f); });
+        })(jQuery, document);
+    </script>
+    
+    @Scripts.Render("~/scripts/bootstrap.min.js")
+    @RenderSection("scripts", required: false)
+    
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/bootsidemenu")
+    <script type="text/javascript">
+        $('#menu').BootSideMenu({
+            side: "right", // left or right
+            autoClose: true // auto close when page loads
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                    if (target.length) {
+                        $('html, body').animate({ scrollTop: target.offset().top }, 1250, 'easeOutCubic');
+                        return false;
+                    }
+                }
+                return false;
+            });
+        });
+    </script>
+    
+@if (!Request.IsLocal)
+{
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62299224-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+}
+</body>
+
+</html>

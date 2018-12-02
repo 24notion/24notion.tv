@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Partners";
+}
+
+<section id="page" class="partners">
+    @Html.Partial("_PageHeader",
+        new ViewDataDictionary
+        {
+            //{ "TitleHeader", ViewBag.Title },
+            { "TitleContent", @"
+                <h5>
+                    <br><br><br>
+                    24Notion is committed to developing collaborative
+                    relationships with global clients in order to deliver
+                    customized solutions that spark the imagination,
+                    enhance communication, and motivate  action.
+                </h5>
+            " },
+            { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
+        })
+    
+    <div id="content" class="notosans-medium">
+        <div id="partners_title">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Partners" } })
+
+            <div class="container-fluid pg-section-content">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <ul class="list-inline">
+                            <li><img src="/content/images/partners/adobe.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/sony.jpg" alt="partner" /></li>
+                            <li><img src="/content/images/partners/kpmg.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/b4.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/cgt.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/adidas.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/ascena.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/universal.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/inmobi.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/republic.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/taologo.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/daley.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/beyondtrust.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/oen.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/comtrade.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/childhelp.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/psu.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/zumba.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/etc.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/naturestears.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/girlsintech.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/girlsinc.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/ncfwit.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/nwrwic.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/etcentric.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/facebook.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/oracle.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/salesforce.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/lenovogray.jpg" alt="partner" /></li>
+                            <li><img src="/content/images/partners/mdjuniors.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/weyerhaeuser.jpg" alt="partner" /></li>
+							<li><img src="/content/images/partners/accenture.jpg" alt="partner" /></li>
+							<li><img src="/content/images/partners/pdx150.png" alt="partner" /></li>
+                            <li><img src="~/content/images/partners/intel.png" alt="partner" /></li>
+                            <li><img src="/content/images/partners/resilient.png" alt="partner" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @Html.Partial("_PageFooter")
+</section>
