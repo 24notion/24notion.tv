@@ -144,12 +144,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\documents\mediakit\Cloudcomputing_24Notion.mov">
-      <Link>documents\mediakit\Cloudcomputing_24Notion.mov</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\weatherAnimation_24Notion.mov">
-      <Link>documents\mediakit\weatherAnimation_24Notion.mov</Link>
-    </Content>
     <Content Include="Content\BootSideMenu.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -276,6 +270,8 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="documents\mediakit\Cloudcomputing_24Notion.mov" />
+    <Content Include="documents\mediakit\weatherAnimation_24Notion.mov" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -291,66 +287,26 @@
     <Content Include="fonts\NotoSans\noto-sans-regular-webfont.eot" />
     <Content Include="fonts\NotoSans\noto-sans-regular-webfont.ttf" />
     <Content Include="fonts\NotoSans\noto-sans-regular-webfont.woff" />
-    <Content Include="..\..\documents\24notion_PFWCasestudy_copyright_24NotionLLC.pdf">
-      <Link>documents\24notion_PFWCasestudy_copyright_24NotionLLC.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion2014MediaKit.pdf">
-      <Link>documents\mediakit\24Notion2014MediaKit.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion2014MediaKit1.pdf">
-      <Link>documents\mediakit\24Notion2014MediaKit1.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion2014MediaKit2.pdf">
-      <Link>documents\mediakit\24Notion2014MediaKit2.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion2014MediaKit_ASC.pdf">
-      <Link>documents\mediakit\24Notion2014MediaKit_ASC.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion2014MediaKit_FXc.pdf">
-      <Link>documents\mediakit\24Notion2014MediaKit_FXc.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24NotionCaseStudy_Adobe.pdf">
-      <Link>documents\mediakit\24NotionCaseStudy_Adobe.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24NotionCaseStudy_girlsinc.pdf">
-      <Link>documents\mediakit\24NotionCaseStudy_girlsinc.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24NotionCaseStudy_OOW13.pdf">
-      <Link>documents\mediakit\24NotionCaseStudy_OOW13.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24NotionMediaKitBranded_c2014.pdf">
-      <Link>documents\mediakit\24NotionMediaKitBranded_c2014.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24NotionMediaKit_c2014.pdf">
-      <Link>documents\mediakit\24NotionMediaKit_c2014.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notionv05.pdf">
-      <Link>documents\mediakit\24Notionv05.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion_2011_v01.pdf">
-      <Link>documents\mediakit\24Notion_2011_v01.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion_2011_v02.pdf">
-      <Link>documents\mediakit\24Notion_2011_v02.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion_2011_v03.pdf">
-      <Link>documents\mediakit\24Notion_2011_v03.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\24Notion_2012_v04.pdf">
-      <Link>documents\mediakit\24Notion_2012_v04.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\GD_24Notion_2014Copyright.pdf">
-      <Link>documents\mediakit\GD_24Notion_2014Copyright.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\mediakit01.pdf">
-      <Link>documents\mediakit\mediakit01.pdf</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\TAO_intro_ 24Notion.mp4">
-      <Link>documents\mediakit\TAO_intro_ 24Notion.mp4</Link>
-    </Content>
-    <Content Include="..\..\documents\mediakit\Wrapup OTA14.pdf">
-      <Link>documents\mediakit\Wrapup OTA14.pdf</Link>
-    </Content>
+    <Content Include="documents\24notion_PFWCasestudy_copyright_24NotionLLC.pdf" />
+    <Content Include="documents\mediakit\24Notion2014MediaKit.pdf" />
+    <Content Include="documents\mediakit\24Notion2014MediaKit1.pdf" />
+    <Content Include="documents\mediakit\24Notion2014MediaKit2.pdf" />
+    <Content Include="documents\mediakit\24Notion2014MediaKit_ASC.pdf" />
+    <Content Include="documents\mediakit\24Notion2014MediaKit_FXc.pdf" />
+    <Content Include="documents\mediakit\24NotionCaseStudy_Adobe.pdf" />
+    <Content Include="documents\mediakit\24NotionCaseStudy_girlsinc.pdf" />
+    <Content Include="documents\mediakit\24NotionCaseStudy_OOW13.pdf" />
+    <Content Include="documents\mediakit\24NotionMediaKitBranded_c2014.pdf" />
+    <Content Include="documents\mediakit\24NotionMediaKit_c2014.pdf" />
+    <Content Include="documents\mediakit\24Notionv05.pdf" />
+    <Content Include="documents\mediakit\24Notion_2011_v01.pdf" />
+    <Content Include="documents\mediakit\24Notion_2011_v02.pdf" />
+    <Content Include="documents\mediakit\24Notion_2011_v03.pdf" />
+    <Content Include="documents\mediakit\24Notion_2012_v04.pdf" />
+    <Content Include="documents\mediakit\GD_24Notion_2014Copyright.pdf" />
+    <Content Include="documents\mediakit\mediakit01.pdf" />
+    <Content Include="documents\mediakit\TAO_intro_ 24Notion.mp4" />
+    <Content Include="documents\mediakit\Wrapup OTA14.pdf" />
     <None Include="Properties\PublishProfiles\Release_24notion.tv.pubxml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\BootSideMenu.js" />
