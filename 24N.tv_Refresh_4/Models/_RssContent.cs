@@ -20,7 +20,7 @@ namespace _24N.tv_Refresh.Models
     public class _RssReader
     {
         private const string CACHEKEYPREFIX = "Cache@GetRssFeed:";
-        private static readonly TimeSpan CACHEDURATION = new TimeSpan(0, 0, 5, 0, 0); // 5MIN
+        private static readonly TimeSpan CACHEDURATION = new TimeSpan(0, 1, 0, 0, 0); // 1 Hour
 
         public static IEnumerable<_RssContent> GetFeed(string feedUrl, bool noCache = false)
         {
@@ -51,7 +51,7 @@ namespace _24N.tv_Refresh.Models
             IEnumerable<_RssContent> blogMainFeed = new List<_RssContent>();
 
             WebRequest request = WebRequest.Create(feedUrl);
-            request.Timeout = 5000; //5 Second Timeout
+            request.Timeout = 15000; //15 Second Timeout
 
             using (WebResponse response = request.GetResponse())
             {

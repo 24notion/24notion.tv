@@ -33,6 +33,7 @@ namespace _24N.tv_Refresh.Controllers
         private const string _cFeedUrl = "http://24notion.net/category/press/rss";
         public ActionResult Updates()
         {
+            //return Redirect("http://24notion.net")
             ViewBag.RssFeed = _RssReader.GetFeed(_cFeedUrl);
             return View();
         }
@@ -48,6 +49,11 @@ namespace _24N.tv_Refresh.Controllers
         }
 
         public ActionResult Vip()
+        {
+            return View();
+        }
+
+        public ActionResult Vvip()
         {
             return View();
         }

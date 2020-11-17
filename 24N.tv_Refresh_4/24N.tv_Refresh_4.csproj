@@ -22,6 +22,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -237,6 +238,10 @@
     <Content Include="Content\images\social\twitter_a.png" />
     <Content Include="Content\images\social\youtube_a.png" />
     <Content Include="Content\images\vip\2015_16.Estate.Sampler.jpg" />
+    <Content Include="Content\images\vip\2016.Bernau.Block.Pinot.Noir.jpg" />
+    <Content Include="Content\images\vvip\2016.Bernau.Block.Pinot.Noir.jpg" />
+    <Content Include="Content\images\vvip\2016.Tualatin.Estate.Pinot.Noir.jpg" />
+    <Content Include="Content\images\vvip\2017.Estate.Pinot.Noir.wCutting.Board.jpg" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -352,6 +357,7 @@
     <Content Include="Views\Shared\_PageSectionHeader.cshtml" />
     <Content Include="Views\Site\Holiday.cshtml" />
     <Content Include="Views\Site\Vip.cshtml" />
+    <Content Include="Views\Site\Vvip.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
