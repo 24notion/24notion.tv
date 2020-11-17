@@ -492,6 +492,10 @@ figure.slide-cap.cap-bottom:hover > figcaption { bottom: 0; }
 }
 
 @media screen and (min-width: 384px) {
+    #page #content {
+        font-size: 12px;
+        font-size: 1.3em;
+    }
     /* 4 columns by default */
     #page.boldideas #tilecontainer .brick,
     #page.boldideas #tilecontainer .brick.w1 { width: 22.28%; margin: 0.5%; } 
@@ -514,7 +518,7 @@ figure.slide-cap.cap-bottom:hover > figcaption { bottom: 0; }
     .content-area h5, .content-area .h5 { font-size: 22px; font-size: 1.8vw; line-height: initial; }
     .content-area h6, .content-area .h6 { font-size: 16px; font-size: 1.2vw; line-height: initial; }
 
-    #page #content { font-size: 22px; font-size: 1.8vw; }
+    #page #content { font-size: 18px; font-size: 1.7em; }
 }
 
 @media screen and (min-width: 992px) {
