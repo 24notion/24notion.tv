@@ -24,6 +24,26 @@
                 if (f === d || f === u) { return a; } else { p(f); }
             };
         })(window, document);
+        (function (i, s, o, g, r, a, m) {
+            window.addEventListener("message", handleJotFormMessage, false);
+        })(window, document);
+
+        function handleJotFormMessage(event) {
+            var jfIfr = document.getElementById("jotformiframe");
+            if (jfIfr) {
+                var args = event.data.split(":");
+                var accepted_origin = 'https://submit.jotform.com';
+                if (event.origin == accepted_origin) {
+                    jfIfr.scrollIntoView();
+                } else {
+                    switch (args[0]) {
+                        case "setHeight":
+                            jfIfr.style.minHeight = args[1] + "px";
+                            break;
+                    }
+                }
+            }
+        }
     </script>
 
     @Scripts.Render("~/bundles/modernizr") 
@@ -93,6 +113,7 @@
                 return false;
             });
         });
+        //$(window).bind("message", handleJotFormMessage)
     </script>
     
 @if (!Request.IsLocal)
