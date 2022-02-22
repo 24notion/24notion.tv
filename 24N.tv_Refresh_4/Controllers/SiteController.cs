@@ -30,10 +30,10 @@ namespace _24N.tv_Refresh.Controllers
             return View();
         }
 
-        private const string _cFeedUrl = "http://24notion.net/category/press/rss";
+        private const string _cFeedUrl = "https://24notion.net/category/press/rss";
         public ActionResult Updates()
         {
-            //return Redirect("http://24notion.net")
+            //return Redirect("https://24notion.net")
             ViewBag.RssFeed = _RssReader.GetFeed(_cFeedUrl);
             return View();
         }
