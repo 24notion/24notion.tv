@@ -50,8 +50,14 @@ namespace _24N.tv_Refresh.Models
         {
             IEnumerable<_RssContent> blogMainFeed = new List<_RssContent>();
 
+            if (feedUrl.StartsWith("https"))
+            {
+                ServicePointManager.Expect100Continue = true;
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            }
+            
             WebRequest request = WebRequest.Create(feedUrl);
-            request.Timeout = 15000; //15 Second Timeout
+            request.Timeout = 20000; //20 Second Timeout
 
             using (WebResponse response = request.GetResponse())
             {
