@@ -193,8 +193,8 @@
     <Content Include="Content\images\header\updates_header_a.jpg" />
     <Content Include="Content\images\header\values_header_a.jpg" />
     <Content Include="Content\images\header\vip_header_a.jpg" />
-    <Content Include="Content\images\holiday\2020\2016_brut_champagne.jpg" />
-    <Content Include="Content\images\holiday\2020\2017_pinot_noir_magnum.jpg" />
+    <Content Include="Content\images\holiday\2022\BernauBottleShot_500.jpg" />
+    <Content Include="Content\images\holiday\2022\EltonBottleShot_500.jpg" />
     <Content Include="Content\images\home\1_catalyst_a.jpg" />
     <Content Include="Content\images\home\2_redefine_a.jpg" />
     <Content Include="Content\images\home\3_reengage_a.jpg" />
@@ -250,11 +250,6 @@
     <Content Include="Content\images\social\rss_a.png" />
     <Content Include="Content\images\social\twitter_a.png" />
     <Content Include="Content\images\social\youtube_a.png" />
-    <Content Include="Content\images\holiday\2018\2015_16.Estate.Sampler.jpg" />
-    <Content Include="Content\images\holiday\2019\2016.Bernau.Block.Pinot.Noir.jpg" />
-    <Content Include="Content\images\holiday\2019\2016.Bernau.Block.Pinot.Noir.jpg" />
-    <Content Include="Content\images\holiday\2018\2016.Tualatin.Estate.Pinot.Noir.jpg" />
-    <Content Include="Content\images\holiday\2019\2017.Estate.Pinot.Noir.wCutting.Board.jpg" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
