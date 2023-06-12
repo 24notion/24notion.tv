@@ -201,6 +201,7 @@
     <Content Include="Content\images\home\4_relaunch_a.jpg" />
     <Content Include="Content\images\home\5_recreate_a.jpg" />
     <Content Include="Content\images\home\6_renew_a.jpg" />
+    <Content Include="Content\images\home\video_lasvegas-arial.jpg" />
     <Content Include="Content\images\partners\adidas.png" />
     <Content Include="Content\images\partners\adobe.png" />
     <Content Include="Content\images\partners\ascena.png" />
@@ -379,6 +380,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\images\vip\" />
     <Folder Include="Content\images\vvip\" />
+    <Folder Include="Content\videos\experiences\" />
+    <Folder Include="Content\videos\home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -10,24 +10,31 @@
             { "TitleImageSrc", Url.Content("~/Content/images/home/1_catalyst_a.jpg") }
         })
 
-    @*<div id="homesection1" class="page-head section-block">
+    <div id="homesection1" class="section-block">
         <div class="image-area">
-            <img width="1920" height="1080" alt="24Notion" src="/Content/images/home/1_catalyst_a.jpg">
+            <video controls preload="auto"
+                   controlsList="nodownload"
+                   poster="~/Content/images/home/video_lasvegas-arial.jpg"
+                   style="width: 100%;">
+                <source src="~/Content/videos/home/Teaser_Highlight_HQ.mp4" type="video/mp4" />
+                Video tag is not supported in this browser.
+            </video>
         </div>
         <div class="container-fluid content-area">
             <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 col-xs-12 title bankgothic-light" style="margin-top: 25%;text-align: center;">
-                    <h2 class="text-center">@ViewBag.Title</h2>
-                    <br />
-                    <div class="text-right sectionnav">
-                        <a href="#homesection2" class="nohighlight" style="display: block; width: 100%;">
+                <br />
+                <div class="col-xs-8 col-sm-6 text-right">
+                </div>
+                <div class="col-xs-4 col-sm-6 sectionnav text-right" style="margin-right: 15px; z-index: 2;">
+                    <div class="sectionnav">
+                        <a href="#homesection2" class="nohighlight">
                             <img class="arrow-down" width="38" height="38" alt="next" src="~/Content/images/arrowdown.png">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>*@
+    </div>
 
     <div id="homesection2" class="section-block">
         <div class="image-area">
