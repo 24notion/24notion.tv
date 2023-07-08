@@ -30,11 +30,6 @@ namespace _24N.tv_Refresh.Controllers
             return View();
         }
 
-        public ActionResult Experiences2()
-        {
-            return View();
-        }
-
         public ActionResult Partners()
         {
             return View();
