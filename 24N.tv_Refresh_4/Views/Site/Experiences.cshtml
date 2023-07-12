@@ -21,16 +21,20 @@
             { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
         })
     <style type="text/css">
-        #carousel-nav.nav > li {
-            padding-right: 12px;
+        #carousel-nav.nav > li > a:focus {
+            background-color: initial;
         }
-
-            #carousel-nav.nav > li > a:focus {
-                background-color: initial;
-            }
-
         #carousel-nav.nav-pills > li > a {
             border-radius: unset;
+        }
+        @@media only screen and (min-width:768px) {
+            #carousel-nav.nav > li {
+                padding-right: 12px;
+            }
+            #carousel-nav.nav-pills > li > a {
+                word-break: break-word;
+                word-spacing: 50000px;
+            }
         }
     </style>
 
@@ -49,13 +53,16 @@
                     <div class="col-xs-offset-3 col-xs-6">
                         <ul id="carousel-nav" class="nav nav-pills nav-justified">
                             <li data-target="#carousel-example-generic" data-slide-to="0">
-                                <a href="#">Example 1</a>
+                                <a href="#">Experiential <wbr />Event</a>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to="1">
-                                <a href="#">Example 2</a>
+                                <a href="#">Integrated <wbr />Marketing</a>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to="2">
-                                <a href="#">Example 3</a>
+                                <a href="#">Trifecta <wbr />campaign</a>
+                            </li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3">
+                                <a href="#">Virtual <wbr />Program</a>
                             </li>
                         </ul>
                     </div>
@@ -69,7 +76,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
-                                    <h2>Example 1 - 24Notion and Adobe Digital Experience turn heads in the healthcare market</h2>
+                                    <h2>Adobe Summit and Microsoft VIP Experiential engagement</h2>
                                 </div>
                             </div>
                             <div class="row">
@@ -89,7 +96,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
-                                    <h2>Example 2 - 24Notion and Adobe Digital Experience turn heads in the healthcare market</h2>
+                                    <h2>Healthcare and Lifesciences: Adobe/Microsoft/Change Healthcare</h2>
                                 </div>
                             </div>
                             <div class="row">
@@ -146,10 +153,11 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
-                                    <h2>Example 3 - 24Notion and Adobe Digital Experience turn heads in the healthcare market</h2>
+                                    <h2>Trifecta Campaign for VIP curated and personalized engagement</h2>
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-xs-offset-2 col-xs-8">WORK IN PROGRESS</div>
                                 <div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-4">
                                     <h5>The Challenge</h5>
                                     <div>Adobe fuels digital transformation for B2B companies by offering unmatched customer experiences via the Adobe Experience Cloud. One of its key vertical offerings, Adobe Digital Experience&rsquo;s Life Sciences solution, had never been formally launched to the healthcare industry.</div><br />
@@ -196,6 +204,26 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
+                                    <h2>Sephora Beauty Virtual Personalization</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-8">
+                                    <video controls preload="auto"
+                                           controlsList="nodownload"
+                                           @*poster="~/Content/images/home/video_lasvegas-arial.jpg"*@
+                                           style="width: 100%;">
+                                        <source src="~/Content/videos/experiences/Sephora_Master_FINAL_HQ_v5.mp4" type="video/mp4" />
+                                        Video tag is not supported in this browser.
+                                    </video>
                                 </div>
                             </div>
                         </div>
