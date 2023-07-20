@@ -20,6 +20,16 @@
             " },
             { "TitleImageSrc", Url.Content("~/Content/images/header/" + ViewBag.Title.Replace(" ", String.Empty).ToLower() + "_header_a.jpg") }
         })
+    <script>
+        $(function () {
+            $('#carousel-example-generic').on('slide.bs.carousel', (e) => {
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                $('#carousel-nav > li').removeClass('lead')
+                $('#carousel-nav > li[data-slide-to="'+idx+'"]').addClass('lead')
+            })
+        });
+    </script>
     <style type="text/css">
         #carousel-nav.nav > li > a:focus {
             background-color: initial;
@@ -105,7 +115,7 @@
                                     <div>During the conference, more than 8,000 attendees visited Adobe’s interactive environment.</div><br />
                                     <div>The launch of Adobe Life Sciences won the Hermes Creative Award for Experiential 360 High-Touch Multi-Touch Campaign and Engagement.</div><br />
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-6">
                                             <div class="text-center">
                                                 <h3>5M</h3>
                                                 <div>Social media</div>
@@ -113,7 +123,7 @@
                                                 <div>2-days</div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-6">
                                             <div class="text-center">
                                                 <h3>2,607</h3>
                                                 <div>Registrants from</div>
@@ -123,7 +133,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-6">
                                             <div class="text-center">
                                                 <h3>200</h3>
                                                 <div>Individual customer</div>
@@ -131,7 +141,7 @@
                                                 <div>closed deals</div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-4">
+                                        <div class="col-xs-6">
                                             <div class="text-center">
                                                 <h3>3.75M</h3>
                                                 <div>Digital Brand</div>
@@ -157,53 +167,52 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-offset-2 col-xs-8">WORK IN PROGRESS</div>
                                 <div class="col-xs-offset-2 col-xs-8 col-sm-offset-1 col-sm-4">
-                                    <h5>The Challenge</h5>
-                                    <div>Adobe fuels digital transformation for B2B companies by offering unmatched customer experiences via the Adobe Experience Cloud. One of its key vertical offerings, Adobe Digital Experience&rsquo;s Life Sciences solution, had never been formally launched to the healthcare industry.</div><br />
-                                    <div>The Adobe team needed to build brand awareness in order to build and accelerate its customer pipeline, strengthen current relationships with customers and partners, and create new ones. It was time to make a dramatic entrance into the market.</div><br />
-                                    <h5>The 24Notion Approach - Creating an immersive experience</h5>
-                                    <div>24Notion created a plan to launch the Adobe Digital Experience Life Sciences program at HLTH, a leading global healthcare conference focused on health innovation and transformation.</div><br />
-                                    <div>The agency built a brand messaging framework and crafted a strategy to bring it to life with experiential activations in-person and online, a global social presence, and a showcase for Adobe thought leadership.</div>
-                                    <ul>
-                                        <li>24Notion strategized a detailed turnkey plan, from pre-show planning to launch to post-event engagement.</li>
-                                        <li>The three-day HLTH conference was the coming-out party forAdobe Experience Cloud for Healthcare. 24Notion drove day-of activations in an experiential, fully functional event space that featured a conference room, theater with hourly presentations, and kiosks for invited partners including Microsoft and Change Healthcare to share expertise with conference attendees.</li>
-                                    </ul>
+                                    <div>24Notion worked with client on reimagine custom VIP engagement - a few but not limited: cooking Virtual events and social gathers for the era of lockdowns and remote work</div><br />
+                                    <div>Cook along experience: Michelin Star Experience with Michale Mina, Rick Bayless.</div><br />
+                                    <div>VIP "wellness" experience.</div><br />
+                                    <div>VIP "May the fourth be with you" experience: Disney VIP experiential dinner and custom engagement.</div><br />
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="text-center">
+                                                <h3>95-100</h3>
+                                                <div>Of invitees joined</div>
+                                                <div>the virtual events</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="text-center">
+                                                <h3>15-74</h3>
+                                                <div>Accounts closed</div>
+                                                <div>with key customers</div>
+                                                <div>who attended</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="text-center">
+                                                <h3>1300</h3>
+                                                <div>Accessed video on</div>
+                                                <div>demand after the</div>
+                                                <div>events</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="text-center">
+                                                <h3>150K</h3>
+                                                <div>Digital Brand</div>
+                                                <div>amplification during</div>
+                                                <div>couple hours</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6">
                                     <div class="image-area">
-                                        <img width="100%" alt="24Notion/Adobe/HLTH" src="~/Content/images/experiences/casestudy_hlth.png">
+                                        <img style="width: 100%;" alt="24Notion/Adobe/HLTH" src="~/Content/images/experiences/casestudy_trifecta.jpg">
                                     </div>
-                                    <h5>The Results:</h5>
-                                    <div>24Notion&rsquo;s creative and calculated direction enabled Adobe to turn heads at HLTH.</div><br />
-                                    <div>During the conference, more than 8,000 attendees visited Adobe&rsquo;s interactive environment. Adobe conducted 200 individual customer meetings and closed 50 deals on-site.</div><br />
-                                    <div>The launch of Adobe Life Sciences won the Hermes Creative Award for Experiential 360 High-Touch Multi-Touch Campaign and Engagement.</div><br />
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <div class="text-center">
-                                                <h3>5M</h3>
-                                                <div>Social media</div>
-                                                <div>impressions within</div>
-                                                <div>2-days</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <div class="text-center">
-                                                <h3>2,607</h3>
-                                                <div>Registrants from</div>
-                                                <div>1,505 different</div>
-                                                <div>organizations</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-4">
-                                            <div class="text-center">
-                                                <h3>200</h3>
-                                                <div>Individual customer</div>
-                                                <div>meetings - with 50</div>
-                                                <div>closed deals</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <br />
                                 </div>
                             </div>
                         </div>
