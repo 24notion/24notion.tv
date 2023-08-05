@@ -184,7 +184,8 @@
     <Content Include="Content\images\boldideas\16guys.jpg" />
     <Content Include="Content\images\boldideas\17cio.jpg" />
     <Content Include="Content\images\connect\behind_the_scene.jpg" />
-    <Content Include="Content\images\experiences\casestudy_hlth.png" />
+    <Content Include="Content\images\experiences\casestudy_healthcare.jpg" />
+    <Content Include="Content\images\experiences\casestudy_trifecta.jpg" />
     <Content Include="Content\images\header\experiences_header_a.jpg" />
     <Content Include="Content\images\header\boldideas_header_a.jpg" />
     <Content Include="Content\images\header\connect_header_a.jpg" />
@@ -374,7 +375,6 @@
     <Content Include="Views\Site\Vip.cshtml" />
     <Content Include="Views\Site\Vvip.cshtml" />
     <Content Include="Views\Site\Experiences.cshtml" />
-    <Content Include="Views\Site\Experiences2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
