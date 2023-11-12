@@ -194,8 +194,9 @@
     <Content Include="Content\images\header\updates_header_a.jpg" />
     <Content Include="Content\images\header\values_header_a.jpg" />
     <Content Include="Content\images\header\vip_header_a.jpg" />
-    <Content Include="Content\images\holiday\2022\BernauBottleShot_500.jpg" />
-    <Content Include="Content\images\holiday\2022\EltonBottleShot_500.jpg" />
+    <Content Include="Content\images\holiday\2023\EstateDuo_600_VVIP.jpg" />
+    <Content Include="Content\images\holiday\2023\NonWine_600.jpg" />
+    <Content Include="Content\images\holiday\2023\Reserved_600_VIP.jpg" />
     <Content Include="Content\images\home\1_catalyst_a.jpg" />
     <Content Include="Content\images\home\2_redefine_a.jpg" />
     <Content Include="Content\images\home\3_reengage_a.jpg" />
