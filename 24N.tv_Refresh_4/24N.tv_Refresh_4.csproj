@@ -246,12 +246,10 @@
     <Content Include="Content\images\partners\zumba.png" />
     <Content Include="Content\images\shader.png" />
     <Content Include="Content\images\social\facebook_a.png" />
-    <Content Include="Content\images\social\google_plus_a.png" />
     <Content Include="Content\images\social\instagram_a.png" />
     <Content Include="Content\images\social\linkedin_a.png" />
     <Content Include="Content\images\social\pinterest_a.png" />
-    <Content Include="Content\images\social\rss_a.png" />
-    <Content Include="Content\images\social\twitter_a.png" />
+    <Content Include="Content\images\social\x_a.png" />
     <Content Include="Content\images\social\youtube_a.png" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
