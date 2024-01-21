@@ -25,8 +25,8 @@
             $('#carousel-example-generic').on('slide.bs.carousel', (e) => {
                 var $e = $(e.relatedTarget);
                 var idx = $e.index();
-                $('#carousel-nav > li').removeClass('lead')
-                $('#carousel-nav > li[data-slide-to="'+idx+'"]').addClass('lead')
+                $('#carousel-nav > li').removeClass('text-bold')
+                $('#carousel-nav > li[data-slide-to="' + idx + '"]').addClass('text-bold')
             })
         });
     </script>
@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
                         <ul id="carousel-nav" class="nav nav-pills nav-justified">
-                            <li data-target="#carousel-example-generic" data-slide-to="0">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="text-bold">
                                 <a href="#">Experiential <wbr />Event</a>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to="1">
