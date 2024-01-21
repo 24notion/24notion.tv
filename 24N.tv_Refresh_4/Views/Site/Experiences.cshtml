@@ -36,14 +36,26 @@
         }
         #carousel-nav.nav-pills > li > a {
             border-radius: unset;
+            flex: 1 1 0%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
         @@media only screen and (min-width:768px) {
+            #carousel-nav.nav {
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+            }
             #carousel-nav.nav > li {
                 padding-right: 12px;
+                display: flex;
+                align-items: stretch;
             }
-            #carousel-nav.nav-pills > li > a {
-                word-break: break-word;
-                word-spacing: 50000px;
+            #carousel-nav.nav.nav-justified > li {
+                width: inherit;
             }
         }
     </style>
@@ -60,7 +72,7 @@
             <!-- Navigation -->
             <div class="container-fluid bankgothic-light">
                 <div class="row">
-                    <div class="col-xs-offset-3 col-xs-6">
+                    <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
                         <ul id="carousel-nav" class="nav nav-pills nav-justified">
                             <li data-target="#carousel-example-generic" data-slide-to="0">
                                 <a href="#">Experiential <wbr />Event</a>
@@ -73,6 +85,12 @@
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to="3">
                                 <a href="#">Virtual <wbr />Program</a>
+                            </li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4">
+                                <a href="#">Sports <wbr />Entertainment</a>
+                            </li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5">
+                                <a href="#">Executive Summit <wbr />Industry Roadshow</a>
                             </li>
                         </ul>
                     </div>
@@ -93,9 +111,9 @@
                                 <div class="col-xs-offset-2 col-xs-8">
                                     <video controls preload="auto"
                                            controlsList="nodownload"
-                                           @*poster="~/Content/images/home/video_lasvegas-arial.jpg"*@
+                                           poster="~/Content/images/experiences/24Notion_CaseStudy_Teaser_1280_tbr.jpg"
                                            style="width: 100%;">
-                                        <source src="~/Content/videos/experiences/24Notion_CaseStudy_Teaser.mp4" type="video/mp4" />
+                                        <source src="~/Content/videos/experiences/24Notion_CaseStudy_Teaser_1280_tbr.webm" type="video/webm" />
                                         Video tag is not supported in this browser.
                                     </video>
                                 </div>
@@ -228,9 +246,49 @@
                                 <div class="col-xs-offset-2 col-xs-8">
                                     <video controls preload="auto"
                                            controlsList="nodownload"
-                                           @*poster="~/Content/images/home/video_lasvegas-arial.jpg"*@
+                                           poster="~/Content/images/experiences/Sephora_Master_FINAL_HQ_v5_1280_tbr.jpg"
                                            style="width: 100%;">
-                                        <source src="~/Content/videos/experiences/Sephora_Master_FINAL_HQ_v5.mp4" type="video/mp4" />
+                                        <source src="~/Content/videos/experiences/Sephora_Master_FINAL_HQ_v5_1280_tbr.webm" type="video/webm" />
+                                        Video tag is not supported in this browser.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
+                                    <h2>PGA Experience with Justin Rose</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-8">
+                                    <video controls preload="auto"
+                                           controlsList="nodownload"
+                                           poster="~/Content/images/experiences/JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.jpg"
+                                           style="width: 100%;">
+                                        <source src="~/Content/videos/experiences/JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.webm" type="video/webm" />
+                                        Video tag is not supported in this browser.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-9 col-sm-offset-1 col-sm-10 text-center">
+                                    <h2>Oracle Data/AI and CHRO Thought Leaderships and Experiential</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-8">
+                                    <video controls preload="auto"
+                                           controlsList="nodownload"
+                                           poster="~/Content/images/experiences/Oracle_CaseStudy_v2_HQ_1280_tbr.jpg"
+                                           style="width: 100%;">
+                                        <source src="~/Content/videos/experiences/Oracle_CaseStudy_v2_HQ_1280_tbr.webm" type="video/webm" />
                                         Video tag is not supported in this browser.
                                     </video>
                                 </div>

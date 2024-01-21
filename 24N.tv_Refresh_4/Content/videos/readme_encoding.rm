@@ -1,0 +1,40 @@
+** 
+** Prerequisite: 
+** Download standalone ffmpeg files if you don't have them -- https://www.ffmpeg.org/download.html
+**
+
+--- START: STEP 1 ---
+Description: 
+Two pass encoding to webm file container. 
+Video type "webm" makes the best quality, smallest video size and most compatible video file for web.
+Using VP9 video encoding and Vorbis audio encoding. Relatively scaled down to 1280 width.
+
+To use:
+Fill out command below and copy into shell (cmd/bash/etc), then run command. Run ONE command at a time.
+  Replace [PathToFFMpeg] with full path to local ffmpeg directory
+  Replace [InputPath] with  path to local source video (parent folder to file)
+  Replace [OutputPath] with path to local output video (parent folder to file)
+  Replace [FileName] with file name of source video 
+    For output, append suffix of "[scale]_tbr" -- e.g. c:\path\myvideo_1280_tbr.jpg 
+    Note: tbr stands for target bit rate.
+--- STOP: STEP 1 ---
+
+C:\[PathToFFMpeg]\bin\ffmpeg.exe -i "C:\[InputPath]\[FileName].mp4" -c:v libvpx-vp9 -b:v 1M -vf scale=1280:-1 -deadline best -pass 1 -an -f webm -y NUL
+C:\[PathToFFMpeg]\bin\ffmpeg.exe -i "C:\[InputPath]\[FileName].mp4" -c:v libvpx-vp9 -b:v 1M -vf scale=1280:-1 -deadline best -pass 2 -c:a libvorbis -b:a 128k -f webm -y "C:\[OutputPath]\[FileName]_1280_tbr.webm"
+
+
+--- START: STEP 2 ---
+Description: 
+Capture a single frame of encoded video and save it as jpg image. Use this image as the 'poster' for the html video tag.
+
+To use:
+Fill out command below and copy into shell (cmd/bash/etc), then run command.
+  Replace [PathToFFMpeg] with full path to local ffmpeg directory
+  Replace [InputPath] with  path to local encoded video (parent folder to file)
+  Replace [OutputPath] with path to local output image (parent folder to file)
+  Replace [FileName] with file name from encoded video 
+	For consistency, the image should be suffixed with "[scale]_tbr" -- e.g. c:\path\myvideo_1280_tbr.jpg
+  If necessary, modify the skip ahead to the video frame you want to capture (-ss switch HH:MM:SS)
+--- STOP: STEP 2 ---
+
+C:\[PathToFFMpeg]\bin\ffmpeg.exe -i "C:\[InputPath]\[FileName]_1280_tbr.webm" -ss 00:00:16 -frames:v 1 "C:\[OutputPath]\[FileName]_1280_tbr.jpg"
