@@ -25,40 +25,12 @@
             $('#carousel-example-generic').on('slide.bs.carousel', (e) => {
                 var $e = $(e.relatedTarget);
                 var idx = $e.index();
-                $('#carousel-nav > li').removeClass('text-bold')
-                $('#carousel-nav > li[data-slide-to="' + idx + '"]').addClass('text-bold')
+                $('#carousel-nav > li').removeClass('active');
+                $('#carousel-nav > li[data-slide-to="' + idx + '"]').addClass('active')
+                $('#carousel-example-generic video').trigger('pause');
             })
         });
     </script>
-    <style type="text/css">
-        #carousel-nav.nav > li > a:focus {
-            background-color: initial;
-        }
-        #carousel-nav.nav-pills > li > a {
-            border-radius: unset;
-            flex: 1 1 0%;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        @@media only screen and (min-width:768px) {
-            #carousel-nav.nav {
-                display: flex;
-                align-items: stretch;
-                justify-content: center;
-            }
-            #carousel-nav.nav > li {
-                padding-right: 12px;
-                display: flex;
-                align-items: stretch;
-            }
-            #carousel-nav.nav.nav-justified > li {
-                width: inherit;
-            }
-        }
-    </style>
 
     <div id="content" class="notosans-medium">
         <div>
@@ -74,7 +46,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
                         <ul id="carousel-nav" class="nav nav-pills nav-justified">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="text-bold">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
                                 <a href="#">Experiential <wbr />Event</a>
                             </li>
                             <li data-target="#carousel-example-generic" data-slide-to="1">
@@ -113,7 +85,7 @@
                                            controlsList="nodownload"
                                            poster="~/Content/images/experiences/24Notion_CaseStudy_Teaser_1280_tbr.jpg"
                                            style="width: 100%;">
-                                        <source src="~/Content/videos/experiences/24Notion_CaseStudy_Teaser_1280_tbr.webm" type="video/webm" />
+                                        <source src="https://24notion.tv/Content/videos/experiences/24Notion_CaseStudy_Teaser_1280_tbr.webm" type="video/webm" />
                                         Video tag is not supported in this browser.
                                     </video>
                                 </div>
