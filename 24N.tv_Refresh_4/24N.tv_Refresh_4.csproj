@@ -184,8 +184,12 @@
     <Content Include="Content\images\boldideas\16guys.jpg" />
     <Content Include="Content\images\boldideas\17cio.jpg" />
     <Content Include="Content\images\connect\behind_the_scene.jpg" />
+    <Content Include="Content\images\experiences\24Notion_CaseStudy_Teaser_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\casestudy_healthcare.jpg" />
     <Content Include="Content\images\experiences\casestudy_trifecta.jpg" />
+    <Content Include="Content\images\experiences\JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\Oracle_CaseStudy_v2_HQ_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\Sephora_Master_FINAL_HQ_v5_1280_tbr.jpg" />
     <Content Include="Content\images\header\experiences_header_a.jpg" />
     <Content Include="Content\images\header\boldideas_header_a.jpg" />
     <Content Include="Content\images\header\connect_header_a.jpg" />
@@ -326,6 +330,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\videos\readme_encoding.rm" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Release_24notion.tv.pubxml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
