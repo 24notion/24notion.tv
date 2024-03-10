@@ -341,10 +341,18 @@ textarea {
 ------------------------*/
 #page.error { top: 62px; position: relative; color: #999; }
 
+#page.home .section-block { background-color: #000; }
 #page.home .section-block.page-head .content-area { top: 45%; }
 #page.home .section-block~.section-block .content-area { top: inherit; bottom: 40px; }
 #page.home .section-block~.section-block .content-area .details { font-size: 22px; font-size: 1.8vw; position: relative; }
 #page.home .section-block~.section-block .content-area .sectionnav { right: 0px; bottom: 1.4vw; position: absolute; }
+#page.home #_video-nrf.section-block .image-area {
+    background-image: url('/content/images/home/video_nike_nrf.jpg');
+    background-size: cover;
+    height: 55vw;
+    text-align: center;
+}
+#page.home .section-block .image-area video { max-height: 100%; }
 
 #page.values #content li { margin-bottom: 12px; }
 
