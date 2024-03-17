@@ -76,7 +76,7 @@
             <img width="148" height="69" alt="24Notion" src="~/Content/images/24notion_logo.png">
         </a>
     </section>
-    
+
     @Scripts.Render("~/bundles/jquery")
     <script type="text/javascript">
         // Load all 'stub' document ready events back into jQuery
@@ -85,12 +85,12 @@
             $.each(bindReadyQ, function (i, f) { $(d).bind("ready", f); });
         })(jQuery, document);
     </script>
-    
+
     @Scripts.Render("~/scripts/bootstrap.min.js")
     @RenderSection("scripts", required: false)
-    
+
     @RenderBody()
-    
+
     @Scripts.Render("~/bundles/bootsidemenu")
     <script type="text/javascript">
         $('#menu').BootSideMenu({
@@ -98,7 +98,7 @@
             autoClose: true // auto close when page loads
         });
     </script>
-    
+
     <script type="text/javascript">
         $(function () {
             $('a[href*=#]:not([href=#])').click(function () {
@@ -114,29 +114,20 @@
                 return false;
             });
         });
-        //$(window).bind("message", handleJotFormMessage)
     </script>
-    
-@if (!Request.IsLocal)
-{
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments);
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m);
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-62299224-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-}
+    @if (!Request.IsLocal)
+    {
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYVK42CC50"></script>
+        <script>window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-WYVK42CC50');
+        </script>
+    }
 </body>
 
 </html>
