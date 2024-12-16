@@ -11,7 +11,7 @@ namespace _24N.tv_Refresh.Controllers
         //
         // GET: /Error/
 
-        public ActionResult Index()
+        public ActionResult Error()
         {
             return View();
         }
