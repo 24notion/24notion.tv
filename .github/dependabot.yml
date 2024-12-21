@@ -11,15 +11,16 @@ updates:
     schedule:
       interval: "weekly"
       day: "wednesday"
+    ignore: # Only focus on security patches
+    - dependency-name: "*"
+      update-types:
+        - "version-update:semver-major"
+        - "version-update:semver-minor"
   # Nuget
   - package-ecosystem: "nuget"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "wednesday"
 
-# Only focus on security patches
-ignore:
-  - dependency-name: "*"
-    update-types:
-      - "version-update:semver-major"
-      - "version-update:semver-minor"
+
