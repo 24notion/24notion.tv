@@ -57,13 +57,14 @@
 
 html {
     /* Font Smoothing */
+    --body-font-size: 10px;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 body {
-    font-size: .85em;
+    font-size: calc(.85 * var(--body-font-size));
     font-weight: normal;
     font-style: normal;
     line-height: normal;
@@ -195,11 +196,14 @@ textarea {
                               horizontally within the column  */
 }
 
+.offcanvas { --bs-offcanvas-width: auto; }
 .text-bold { font-weight: bold; }
 
 
 /* Common Area Styles 
 ----------------------*/
+nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
+
 #page #contenttop { height: 10.5vw; margin-top: -10.5vw; }
 
 #footsection1 { color: #FFF; background-color: #000; }
@@ -223,24 +227,17 @@ textarea {
 
 /* Custom Stuff 
 ----------------*/
-.site-logo {
-    position: fixed;
-    top: 0;
-    padding: 10px 0 12px 3.6vw;
-    min-height: 6vw;
-    width: 100%;
+.bg-shader {
     background-image: url('images/shader.png');
     background-color: transparent;
-    border-bottom: 1px solid #e0e0e0;
-    border-bottom: 1px solid rgba(224, 224, 224, .6);
-    z-index: 999998;
 }
-
+.site-logo {
+    padding: 4px 0 10px 1.8vw;
+}
 .site-logo img {
     height: auto; 
-    width: 15%;
+    width: 15vw;
     min-width: 72px;
-    min-height: 30px;
     max-width: 150px;
 }
 
@@ -259,11 +256,8 @@ textarea {
     margin-bottom: 3px;
 }
 
-#page .section-block .image-area {
-    min-height: 2vw;
-}
 #page .section-block .image-area > img {
-    width: 100%;
+    width: 3.5vw;
     height: auto;
 }
 

@@ -25,13 +25,13 @@
 
             <div class="container-fluid pg-section-content">
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
+                    <div class="col">
                         <table class="table">
                         @foreach (var item in ViewBag.RssFeed)
                         {
                             <tr>
                                 <td>
-                                    <div class="bankgothic-light text-left">
+                                    <div class="bankgothic-light text-start">
                                         <h3>
                                             <b>@item.Title</b>
                                             <small><a href="@item.Link" target="_blank">more</a>&nbsp;</small>

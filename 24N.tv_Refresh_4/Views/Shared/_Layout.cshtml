@@ -5,7 +5,7 @@
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
-    <!-- bootstrap v3.4.1 -->
+    <!-- bootstrap v5.3.7 -->
     <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
 
     @Styles.Render("~/Content/css")
@@ -24,9 +24,6 @@
                 if (f === d || f === u) { return a; } else { p(f); }
             };
         })(window, document);
-        (function (i, s, o, g, r, a, m) {
-            window.addEventListener("message", handleJotFormMessage, false);
-        })(window, document);
 
         function handleJotFormMessage(event) {
             var jfIfr = document.getElementById("jotformiframe");
@@ -38,11 +35,20 @@
                 } else {
                     switch (args[0]) {
                         case "setHeight":
-                            jfIfr.style.minHeight = args[1] + "px";
+                            jfIfr.style.height = args[1] + "px";
+                            jfIfr.onload = function () {
+                                jfIfr.style.height = args[1] + "px";
+                            }
                             break;
                     }
                 }
             }
+        }
+        function toggleMenuButton(evt) {
+            var shown = evt.currentTarget.classList.contains("show");
+            var navbarToggleBtn = document.querySelector("#menu .navbar-toggler");
+            var classList = navbarToggleBtn.classList;
+            shown ? classList.add("d-none") : classList.remove("d-none");
         }
     </script>
 
@@ -51,31 +57,32 @@
 <body>
 
     <!-- Navbar ================================================== -->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top bankgothic-light" role="navigation">
+    <nav id="menu" class="navbar fixed-top navbar-dark bg-shader" role="navigation">
         <div class="container-fluid">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="submenu" class="collapse navbar-collapse in">
-                <ul class="nav navbar-nav nav-stacked">
-                    @Html.MenuItemLink("Home", "Index", "Site", null, new { @class = "nohighlight" })
-                    @Html.MenuItemLink("Values", "Values", "Site", null, new { @class = "nohighlight" })
-                    @Html.MenuItemLink("Bold Ideas", "Bold-Ideas", "Site", null, new { @class = "nohighlight" })
-                    @*@Html.MenuItemLink("Experiences", "Experiences", "Site", null, new { @class = "nohighlight" })*@
-                    @Html.MenuItemLink("Partners", "Partners", "Site", null, new { @class = "nohighlight" })
-                    @Html.MenuItemLink("Updates", "Updates", "Site", null, new { @class = "nohighlight" })
-                    @Html.MenuItemLink("Holidays", "Holiday", "Site", null, new { @class = "nohighlight" })
-                    @*@Html.MenuItemLink("VIP", "Vip", "Site", null, new { @class = "nohighlight" })*@
-                    @*@Html.MenuItemLink("VVIP", "VVip", "Site", null, new { @class = "nohighlight" })*@
-                    @Html.MenuItemLink("Connect", "Connect", "Site", null, new { @class = "nohighlight" })
-                </ul>
-            </div>
+            <a href="/" class="navbar-brand site-logo nohighlight">
+                <img width="148" height="69" alt="24Notion" src="~/Content/images/24notion_logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSubmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 
-    <section class="site-logo">
-        <a href="/" class="nohighlight">
-            <img width="148" height="69" alt="24Notion" src="~/Content/images/24notion_logo.png">
-        </a>
-    </section>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbarSubmenu" class="offcanvas offcanvas-end sidebar sidebar-right text-start bg-dark opacity-75 bankgothic-light">
+        <ul class="navbar-nav offcanvas-body">
+            @Html.MenuItemLink("Home", "Index", "Site", null, new { @class = "nav-item nohighlight" })
+            @Html.MenuItemLink("Values", "Values", "Site", null, new { @class = "nav-item nohighlight" })
+            @Html.MenuItemLink("Bold Ideas", "Bold-Ideas", "Site", null, new { @class = "nav-item nohighlight" })
+            @*@Html.MenuItemLink("Experiences", "Experiences", "Site", null, new { @class = "nav-item nohighlight" })*@
+            @Html.MenuItemLink("Partners", "Partners", "Site", null, new { @class = "nav-item nohighlight" })
+            @Html.MenuItemLink("Updates", "Updates", "Site", null, new { @class = "nav-item nohighlight" })
+            @Html.MenuItemLink("Holidays", "Holiday", "Site", null, new { @class = "nav-item nohighlight" })
+            @*@Html.MenuItemLink("VIP", "Vip", "Site", null, new { @class = "nav-item nohighlight" })*@
+            @*@Html.MenuItemLink("VVIP", "VVip", "Site", null, new { @class = "nav-item nohighlight" })*@
+            @Html.MenuItemLink("Connect", "Connect", "Site", null, new { @class = "nav-item nohighlight" })
+        </ul>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     <script type="text/javascript">
@@ -91,28 +98,34 @@
 
     @RenderBody()
 
-    @Scripts.Render("~/bundles/bootsidemenu")
-    <script type="text/javascript">
-        $('#menu').BootSideMenu({
-            side: "right", // left or right
-            autoClose: true // auto close when page loads
-        });
-    </script>
+    @*@Scripts.Render("~/bundles/bootsidemenu")
+        <script type="text/javascript">
+            $('#menu').BootSideMenu({
+                side: "right", // left or right
+                autoClose: true // auto close when page loads
+            });
+        </script>*@
 
     <script type="text/javascript">
         $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+            /**** Scroll to target but don't replace url with hash ****/
+            $('a[href*="#"]:not([href="#"])').on('click', function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
                     if (target.length) {
-                        $('html, body').animate({ scrollTop: target.offset().top }, 1250, 'easeOutCubic');
+                        $('html, body').animate({ scrollTop: target.offset().top }, 250, 'easeOutCubic');
                         return false;
                     }
                 }
                 return false;
             });
+
+            var myOffcanvas = document.getElementById("navbarSubmenu");
+            window.addEventListener("message", handleJotFormMessage, false);
+            myOffcanvas.addEventListener("shown.bs.offcanvas", toggleMenuButton, false);
+            myOffcanvas.addEventListener("hidden.bs.offcanvas", toggleMenuButton, false);
         });
     </script>
 
@@ -120,7 +133,8 @@
     {
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYVK42CC50"></script>
-        <script>window.dataLayer = window.dataLayer || [];
+        <script>
+            window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
             }
