@@ -17,6 +17,12 @@ namespace _24N.tv_Refresh
             bundles.Add(new ScriptBundle("~/bundles/modernizr")
                 .Include("~/Scripts/modernizr-*"));
 
+            // Bootstrap file(s)
+            bundles.Add(new StyleBundle("~/Content/bootstrap")
+                .Include("~/Content/bootstrap.css"));
+            bundles.Add(new Bundle("~/bundles/bootstrap")
+                .Include("~/Scripts/bootstrap.bundle.js"));
+
             // Main css file(s)
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/site.css"));

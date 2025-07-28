@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
     <!-- bootstrap v5.3.7 -->
-    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
-
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bootstrap")
     @Styles.Render("~/Content/bootsidemenu")
-    
+    @Styles.Render("~/Content/css")
+
     <!-- Small script to set a global variable with the base url. Running this in head section so variable is set before any other js code runs -->
     <script type="text/javascript">
         // Safely using .ready() before including jQuery
@@ -52,7 +51,7 @@
         }
     </script>
 
-    @Scripts.Render("~/bundles/modernizr") 
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
 
@@ -93,18 +92,10 @@
         })(jQuery, document);
     </script>
 
-    @Scripts.Render("~/scripts/bootstrap.min.js")
+    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
     @RenderBody()
-
-    @*@Scripts.Render("~/bundles/bootsidemenu")
-        <script type="text/javascript">
-            $('#menu').BootSideMenu({
-                side: "right", // left or right
-                autoClose: true // auto close when page loads
-            });
-        </script>*@
 
     <script type="text/javascript">
         $(function () {
