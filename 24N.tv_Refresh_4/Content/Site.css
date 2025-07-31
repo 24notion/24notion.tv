@@ -57,13 +57,14 @@
 
 html {
     /* Font Smoothing */
+    --body-font-size: 10px;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 body {
-    font-size: .85em;
+    font-size: calc(.85 * var(--body-font-size));
     font-weight: normal;
     font-style: normal;
     line-height: normal;
@@ -195,11 +196,14 @@ textarea {
                               horizontally within the column  */
 }
 
+.offcanvas { --bs-offcanvas-width: auto; }
 .text-bold { font-weight: bold; }
 
 
 /* Common Area Styles 
 ----------------------*/
+nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
+
 #page #contenttop { height: 10.5vw; margin-top: -10.5vw; }
 
 #footsection1 { color: #FFF; background-color: #000; }
@@ -207,10 +211,10 @@ textarea {
 #footsection1 #footlinks { font-size: 15px; font-size: 1.25vw; line-height: 9px; }
 #footsection1 #footcities { color: #999999; }
 #footsection1 #footlinks a:not(:last-child) { margin-right: 3px; }
-#footsection1 #footsocial ul.list-inline { margin: inherit; }
-#footsection1 #footsocial ul.list-inline > li { padding-right: 0px; }
-#footsection1 #footsocial ul.list-inline > li a { display: block; margin-bottom: 5px; }
-#footsection1 #footsocial ul.list-inline > li a img { width: 2.65vw; }
+#footsection1 #footsocial ul { margin: inherit; }
+#footsection1 #footsocial ul > li { padding-right: 0px; }
+#footsection1 #footsocial ul > li a { display: block; margin-bottom: 5px; }
+#footsection1 #footsocial ul > li a img { width: 2.75vw; min-width: 1.35rem; }
 #footsection1 #footcopyright { font-size: 0.64rem; font-size: 0.70vw; color: #999999; margin-bottom: 4px; }
 #footsection1 .row.vertical-align { display: table; }
 #footsection1 .row.vertical-align > [class^="col-"],
@@ -223,24 +227,17 @@ textarea {
 
 /* Custom Stuff 
 ----------------*/
-.site-logo {
-    position: fixed;
-    top: 0;
-    padding: 10px 0 12px 3.6vw;
-    min-height: 6vw;
-    width: 100%;
+.bg-shader {
     background-image: url('images/shader.png');
     background-color: transparent;
-    border-bottom: 1px solid #e0e0e0;
-    border-bottom: 1px solid rgba(224, 224, 224, .6);
-    z-index: 999998;
 }
-
+.site-logo {
+    padding: 4px 0 10px 1.8vw;
+}
 .site-logo img {
     height: auto; 
-    width: 15%;
+    width: 15vw;
     min-width: 72px;
-    min-height: 30px;
     max-width: 150px;
 }
 
@@ -259,9 +256,6 @@ textarea {
     margin-bottom: 3px;
 }
 
-#page .section-block .image-area {
-    min-height: 2vw;
-}
 #page .section-block .image-area > img {
     width: 100%;
     height: auto;
@@ -377,12 +371,12 @@ textarea {
 
 #page.updates #content #updates_news table img { max-width: 93vw !important; height: auto !important; }
 
+#page.holiday .page-head { overflow: hidden; }
 #page.holiday .page-head .title h1 {
     opacity: 0.9;
-    font-size: 6.5vw; 
     padding: 18px 10px;
     margin-top: -20px;
-    color: white; 
+    color: white;
     background-color: black;
     transform: rotate(352deg) scale(1.3, 1.3);
     -webkit-transform: rotate(352deg) scale(1.3, 1.3);

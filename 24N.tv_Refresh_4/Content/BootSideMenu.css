@@ -84,6 +84,11 @@
     margin-top: 0px;
 }
 
+.sidebar .navbar-nav > li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .sidebar .navbar-nav > li > a {
     color: #ffffff;
     line-height: inherit;
