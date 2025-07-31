@@ -214,7 +214,7 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 #footsection1 #footsocial ul { margin: inherit; }
 #footsection1 #footsocial ul > li { padding-right: 0px; }
 #footsection1 #footsocial ul > li a { display: block; margin-bottom: 5px; }
-#footsection1 #footsocial ul > li a img { width: 2.75vw; }
+#footsection1 #footsocial ul > li a img { width: 2.75vw; min-width: 1.35rem; }
 #footsection1 #footcopyright { font-size: 0.64rem; font-size: 0.70vw; color: #999999; margin-bottom: 4px; }
 #footsection1 .row.vertical-align { display: table; }
 #footsection1 .row.vertical-align > [class^="col-"],
@@ -371,12 +371,12 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 
 #page.updates #content #updates_news table img { max-width: 93vw !important; height: auto !important; }
 
+#page.holiday .page-head { overflow: hidden; }
 #page.holiday .page-head .title h1 {
     opacity: 0.9;
-    font-size: 6.5vw; 
     padding: 18px 10px;
     margin-top: -20px;
-    color: white; 
+    color: white;
     background-color: black;
     transform: rotate(352deg) scale(1.3, 1.3);
     -webkit-transform: rotate(352deg) scale(1.3, 1.3);
