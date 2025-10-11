@@ -30,6 +30,12 @@ namespace _24N.tv_Refresh.Controllers
             return View();
         }
 
+        public ActionResult ExperiencesOS()
+        {
+            //Old School with carousel -- kept per Ivo's request
+            return View();
+        }
+
         public ActionResult Partners()
         {
             return View();

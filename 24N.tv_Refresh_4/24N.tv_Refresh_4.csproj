@@ -215,6 +215,7 @@
     <Content Include="Content\images\experiences\Campaign-and-Target-Breakfast_COMBINED_HQ_24Notion_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\casestudy_healthcare.jpg" />
     <Content Include="Content\images\experiences\casestudy_trifecta.jpg" />
+    <Content Include="Content\images\experiences\cs_bg.jpg" />
     <Content Include="Content\images\experiences\JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\Levi-Experience_2min_Teaser_v3_HQ_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\Oracle_CaseStudy_v2_HQ_1280_tbr.jpg" />
@@ -286,6 +287,8 @@
     <Content Include="Content\images\social\pinterest_a.png" />
     <Content Include="Content\images\social\x_a.png" />
     <Content Include="Content\images\social\youtube_a.png" />
+    <Content Include="Content\images\white-double-arrow-up-icon-transparent.png" />
+    <Content Include="Content\images\white_shader.png" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -442,6 +445,7 @@
     <Content Include="Views\Site\Experiences.cshtml" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <Content Include="Views\Site\ExperiencesOS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
