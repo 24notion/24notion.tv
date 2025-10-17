@@ -230,8 +230,6 @@
     <Content Include="Content\images\header\updates_header_a.jpg" />
     <Content Include="Content\images\header\values_header_a.jpg" />
     <Content Include="Content\images\header\vip_header_a.jpg" />
-    <Content Include="Content\images\holiday\2024\Fuller-Pinot-Noir-2021-Ecomm.png" />
-    <Content Include="Content\images\holiday\2024\WVV-Elton-Pinot-Noir-NV-VSUHZN.png" />
     <Content Include="Content\images\home\_catalyst_a.jpg" />
     <Content Include="Content\images\home\_redefine_a.jpg" />
     <Content Include="Content\images\home\_reengage_a.jpg" />
@@ -379,6 +377,8 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\images\vipholiday\2025\WVV-Founders-PinotNoir-NV_800.webp" />
+    <Content Include="Content\images\vipholiday\2025\WVV-Tualatin-PinotNoir-NV_800.webp" />
     <None Include="Content\videos\readme_encoding.1st" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Release_24notion.tv.pubxml" />
@@ -449,8 +449,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\vip\" />
-    <Folder Include="Content\images\vvip\" />
     <Folder Include="Content\videos\experiences\" />
     <Folder Include="Content\videos\home\" />
   </ItemGroup>
