@@ -199,6 +199,15 @@ textarea {
 .offcanvas { --bs-offcanvas-width: auto; }
 .text-bold { font-weight: bold; }
 
+.my-7 {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+.py-7 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
 
 /* Common Area Styles 
 ----------------------*/
@@ -229,6 +238,10 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 ----------------*/
 .bg-shader {
     background-image: url('images/shader.png');
+    background-color: transparent;
+}
+.bg-white-shader-30 {
+    background-image: url('images/white_shader.png');
     background-color: transparent;
 }
 .site-logo {
@@ -281,7 +294,8 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
     color: rgba(210, 210, 210, .8);
 }
 
-#page .section-block .content-area .sectionnav img.arrow-down {
+#page .section-block .content-area .sectionnav img.arrow-down,
+#page .pg-section-content .sectionnav img.arrow-nav {
     height: auto;
     min-height: 16px;
     min-width: 20px;
@@ -388,9 +402,24 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 #page.connect .page-head .details table,
 #page.connect .page-head .details table address { margin-bottom: 0; }
 
+#page.experiences #content > div {
+    background-image: url('/content/images/experiences/cs_bg.jpg');
+    background-size: cover;
+}
+#page.experiences #content #contenttop {
+    height: auto;
+    margin-top: auto;
+}
+#page.experiences #content .pg-section-header {
+    margin-bottom: -55px;
+}
+#page.experiences #content .pg-section-content {
+    margin-bottom: auto;
+}
+
 /* Figure Slide-Caption Styles 
 -------------------------------*/
-figure.slide-cap {
+figure .slide-cap {
     display: block;
     position: relative;
     float: left;
