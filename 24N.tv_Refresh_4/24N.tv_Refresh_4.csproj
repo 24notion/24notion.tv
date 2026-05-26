@@ -459,6 +459,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\videos\afe\" />
     <Folder Include="Content\videos\experiences\" />
     <Folder Include="Content\videos\home\" />
   </ItemGroup>
