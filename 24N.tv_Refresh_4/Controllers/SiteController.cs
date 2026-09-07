@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Security.Cryptography;
+using System.Text;
+using System.Web.Mvc;
 using _24N.tv_Refresh.Models;
 
 namespace _24N.tv_Refresh.Controllers
@@ -10,6 +13,7 @@ namespace _24N.tv_Refresh.Controllers
 
         public ActionResult Index()
         {
+            SetControllerETag(nameof(Index));
             return View();
         }
 
@@ -27,6 +31,7 @@ namespace _24N.tv_Refresh.Controllers
 
         public ActionResult Experiences()
         {
+            SetControllerETag(nameof(Experiences));
             return View();
         }
 
@@ -67,6 +72,24 @@ namespace _24N.tv_Refresh.Controllers
         public ActionResult Vvip()
         {
             return View();
+        }
+
+        private void SetControllerETag(string viewname)
+        {
+            string filePath = Server.MapPath($"~/Views/Site/{viewname}.cshtml");
+            String etag = CheckMD5(filePath);
+            base.Response.Cache.SetETag(etag);
+        }
+
+        private string CheckMD5(string filename)
+        {
+            using (var md5 = MD5.Create())
+            {
+                using (var stream = System.IO.File.OpenRead(filename))
+                {
+                    return Encoding.Default.GetString(md5.ComputeHash(stream));
+                }
+            }
         }
     }
 }

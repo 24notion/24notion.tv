@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Language" content="en-US">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="author" content="Nicholas Tieszen">
-    <meta name="date" content="2025-09-25">
+    <meta name="date" content="2026-10-06">
 
     <title>@ViewBag.Title</title>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
@@ -124,6 +124,22 @@
             window.addEventListener("message", handleJotFormMessage, false);
             myOffcanvas.addEventListener("shown.bs.offcanvas", toggleMenuButton, false);
             myOffcanvas.addEventListener("hidden.bs.offcanvas", toggleMenuButton, false);
+
+            // Now the dom is loaded, preload the video elements when scroll marker is nearby
+            var lazyVideos = [].slice.call(document.querySelectorAll('video[loading*="lazy"]'));
+            if ("IntersectionObserver" in window) {
+                var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (video) {
+                        if (video.isIntersecting) {
+                            video.target.setAttribute('preload', 'auto');
+                            lazyVideoObserver.unobserve(video.target);
+                        }
+                    });
+                });
+                lazyVideos.forEach(function (lazyVideo) {
+                    lazyVideoObserver.observe(lazyVideo);
+                });
+            }
         });
     </script>
 

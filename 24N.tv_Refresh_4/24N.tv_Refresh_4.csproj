@@ -212,6 +212,8 @@
     <Content Include="Content\images\boldideas\17cio.jpg" />
     <Content Include="Content\images\connect\behind_the_scene.jpg" />
     <Content Include="Content\images\experiences\24Notion_CaseStudy_Teaser_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\24Notion_Expo_Compilation_Final2_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\24Notion_Expo_Compilation_Final_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\Campaign-and-Target-Breakfast_COMBINED_HQ_24Notion_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\casestudy_healthcare.jpg" />
     <Content Include="Content\images\experiences\casestudy_trifecta.jpg" />
@@ -222,6 +224,8 @@
     <Content Include="Content\images\experiences\Raider-Trailer_24Notion_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\Sephora_Master_FINAL_HQ_v5_1280_tbr.jpg" />
     <Content Include="Content\images\experiences\TAO-Trailer_v4_24_Notion_HQ_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\Target-Campaign-Chica_Final_1280_tbr.jpg" />
+    <Content Include="Content\images\experiences\Wakuda_Teaser_Final_1280_tbr.jpg" />
     <Content Include="Content\images\header\experiences_header_a.jpg" />
     <Content Include="Content\images\header\boldideas_header_a.jpg" />
     <Content Include="Content\images\header\connect_header_a.jpg" />
@@ -230,6 +234,7 @@
     <Content Include="Content\images\header\updates_header_a.jpg" />
     <Content Include="Content\images\header\values_header_a.jpg" />
     <Content Include="Content\images\header\vip_header_a.jpg" />
+    <Content Include="Content\images\home\24Notion_Expo_Compilation_Short_Final_1280_tbr.jpg" />
     <Content Include="Content\images\home\_catalyst_a.jpg" />
     <Content Include="Content\images\home\_redefine_a.jpg" />
     <Content Include="Content\images\home\_reengage_a.jpg" />
@@ -296,7 +301,6 @@
     <Content Include="Content\images\social\youtube_a.png" />
     <Content Include="Content\images\white-double-arrow-up-icon-transparent.png" />
     <Content Include="Content\images\white_shader.png" />
-    <Content Include="Content\specialty\afe_jf_loader.html" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />

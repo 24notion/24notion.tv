@@ -10,13 +10,15 @@
             { "TitleImageSrc", Url.Content("~/Content/images/home/_catalyst_a.jpg") }
         })
 
-    <div id="_video-teaser" class="section-block">
+    <div id="_video_expo_short" class="section-block">
         <div class="image-area">
-            <video controls preload="auto"
+            <video controls 
+                   loading="lazy"
+                   preload="none"
                    controlsList="nodownload"
-                   poster="~/Content/images/home/video_lasvegas_arial.jpg"
+                   poster="~/Content/images/home/24Notion_Expo_Compilation_Short_Final_1280_tbr.jpg"
                    style="width: 100%;">
-                <source src="~/Content/videos/home/Teaser_Highlight_HQ_1280_tbr.webm" type="video/mp4" />
+                <source src="~/Content/videos/home/24Notion_Expo_Compilation_Short_Final_1280_tbr.webm" type="video/mp4" />
                 Video tag is not supported in this browser.
             </video>
         </div>
@@ -80,7 +82,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4 col-sm-6 sectionnav text-end">
-                    <a href="#_video-nrf" class="nohighlight">
+                    <a href="#_video_nrf" class="nohighlight">
                         <img class="arrow-down" width="38" height="38" alt="next" src="~/Content/images/arrowdown.png">
                     </a>
                 </div>
@@ -88,9 +90,11 @@
         </div>
     </div>
 
-    <div id="_video-nrf" class="section-block">
+    <div id="_video_nrf" class="section-block">
         <div class="image-area">
-            <video controls preload="auto"
+            <video controls 
+                   loading="lazy"
+                   preload="none"
                    controlsList="nodownload">
                 <source src="~/Content/videos/home/24Notion_NRFv4_1215_tbr.webm" type="video/mp4" />
                 Video tag is not supported in this browser.
@@ -180,6 +184,31 @@
                             #B4GIVES<br />
                         </h5>
                     </div>
+                </div>
+                <div class="col-xs-4 col-sm-6 sectionnav text-end">
+                    <a href="#_video_teaser_mirage" class="nohighlight">
+                        <img class="arrow-down" width="38" height="38" alt="next" src="~/Content/images/arrowdown.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="_video_teaser_mirage" class="section-block">
+        <div class="image-area">
+            <video controls 
+                   loading="lazy"
+                   preload="none"
+                   controlsList="nodownload"
+                   poster="~/Content/images/home/video_lasvegas_arial.jpg"
+                   style="width: 100%;">
+                <source src="~/Content/videos/home/Teaser_Highlight_HQ_1280_tbr.webm" type="video/mp4" />
+                Video tag is not supported in this browser.
+            </video>
+        </div>
+        <div class="container-fluid content-area">
+            <div class="row">
+                <br />
+                <div class="col-xs-8 col-sm-6 text-end">
                 </div>
                 <div class="col-xs-4 col-sm-6 sectionnav text-end"></div>
             </div>
