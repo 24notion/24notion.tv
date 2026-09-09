@@ -28,19 +28,23 @@
         <!-- Converted by Zamzar PPT to HTML (https://www.zamzar.com/convert/ppt-to-html/#) -->
         <!-- Restructured by DivTable (http://divtable.com/converter/) -->
         <!-- Cleaned by HTML Cleaner (https://html-cleaner.com/)
-             Settings: Remove tag attributes, inline styles, classes & ids, successive &nbsp;s, empty tags, span tags, encode spec chars. >> Clean HTML -->
+         Settings: Remove tag attributes, inline styles, classes & ids, successive &nbsp;s, empty tags, span tags, encode spec chars.
+         >> Clean HTML -->
         <!-- Final cleanup by PBRsMaster (http://ntieszen.com) -->
-        <div id="contenttop" class="text-white">
-            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Adobe Summit and Microsoft VIP Experiential Engagement - Featuring Shim Lim" } })
+
+        <div id="cs_peanut" class="text-white">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Integrated Experiences & Engagement at Adobe Summit" } })
 
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
-                               poster="~/Content/images/experiences/24Notion_CaseStudy_Teaser_1280_tbr.jpg"
+                               poster="~/Content/images/experiences/24Notion_Expo_Compilation_Final_1280_tbr.jpg"
                                style="width: 100%;">
-                            <source src="~/Content/videos/experiences/24Notion_CaseStudy_Teaser_1280_tbr.webm" type="video/webm" />
+                            <source src="~/Content/videos/experiences/24Notion_Expo_Compilation_Final_1280_tbr.webm" type="video/webm" />
                             Video tag is not supported in this browser.
                         </video>
                     </div>
@@ -61,7 +65,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video class="lazy" controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/Raider-Trailer_24Notion_1280_tbr.jpg"
                                style="width: 100%;">
@@ -86,7 +92,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/Levi-Experience_2min_Teaser_v3_HQ_1280_tbr.jpg"
                                style="width: 100%;">
@@ -97,7 +105,34 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-8 mx-auto text-end sectionnav">
-                        <a href="#cs_strawberry" class="nohighlight">
+                        <a href="#cs_garbonzo" class="nohighlight">
+                            <img class="arrow-nav" width="38" height="38" alt="next" src="/Content/images/arrowdown.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cs_garbonzo" class="text-white">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Adobe x PwC Life Sciences" } })
+
+            <div class="container-fluid pg-section-content py-7">
+                <div class="row">
+                    <div class="col-xl-8 mx-auto my-2">
+                        <video controls
+                               loading="lazy"
+                               preload="none"
+                               controlsList="nodownload"
+                               poster="~/Content/images/experiences/Wakuda_Teaser_Final_1280_tbr.jpg"
+                               style="width: 100%;">
+                            <source src="~/Content/videos/experiences/Wakuda_Teaser_Final_1280_tbr.webm" type="video/webm" />
+                            Video tag is not supported in this browser.
+                        </video>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 mx-auto text-end sectionnav">
+                        <a href="#cs_strawberry" class="nohighlight"> 
                             <img class="arrow-nav" width="38" height="38" alt="next" src="/Content/images/arrowdown.png">
                         </a>
                     </div>
@@ -111,7 +146,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/Oracle_CaseStudy_v2_HQ_1280_tbr.jpg"
                                style="width: 100%;">
@@ -136,7 +173,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.jpg"
                                style="width: 100%;">
@@ -147,7 +186,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-8 mx-auto text-end sectionnav">
-                        <a href="#cs_cupcake" class="nohighlight">
+                        <a href="#cs_chowmein" class="nohighlight">
                             <img class="arrow-nav" width="38" height="38" alt="next" src="/Content/images/arrowdown.png">
                         </a>
                     </div>
@@ -155,17 +194,19 @@
             </div>
         </div>
 
-        <div id="cs_cupcake" class="text-white d-none">
-            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Salesfoce AI Connect Roadshow" } })
+        <div id="cs_chowmein" class="text-white">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Adobe Target and Campaign 2026" } })
 
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
-                               poster="~/Content/images/experiences/JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.jpg"
+                               poster="~/Content/images/experiences/Target-Campaign-Chica_Final_1280_tbr.jpg"
                                style="width: 100%;">
-                            <source src="~/Content/videos/experiences/JustinRose_CaseStudy_HighLight_Final_HQ_1280_tbr.webm" type="video/webm" />
+                            <source src="~/Content/videos/experiences/Target-Campaign-Chica_Final_1280_tbr.webm" type="video/webm" />
                             Video tag is not supported in this browser.
                         </video>
                     </div>
@@ -253,7 +294,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/TAO-Trailer_v4_24_Notion_HQ_1280_tbr.jpg"
                                style="width: 100%;">
@@ -278,7 +321,9 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/Campaign-and-Target-Breakfast_COMBINED_HQ_24Notion_1280_tbr.jpg"
                                style="width: 100%;">
@@ -369,11 +414,40 @@
             <div class="container-fluid pg-section-content py-7">
                 <div class="row">
                     <div class="col-xl-8 mx-auto my-2">
-                        <video controls preload="auto"
+                        <video controls
+                               loading="lazy"
+                               preload="none"
                                controlsList="nodownload"
                                poster="~/Content/images/experiences/Sephora_Master_FINAL_HQ_v5_1280_tbr.jpg"
                                style="width: 100%;">
                             <source src="~/Content/videos/experiences/Sephora_Master_FINAL_HQ_v5_1280_tbr.webm" type="video/webm" />
+                            Video tag is not supported in this browser.
+                        </video>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 mx-auto text-end sectionnav">
+                        <a href="#cs_macaroon" class="nohighlight">
+                            <img class="arrow-nav" width="38" height="38" alt="next" src="/Content/images/arrowdown.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cs_macaroon" class="text-white">
+            @Html.Partial("_PageSectionHeader", new ViewDataDictionary() { { "TitleContent", "Adobe Summit and Microsoft VIP Experiential Engagement - Featuring Shim Lim" } })
+
+            <div class="container-fluid pg-section-content py-7">
+                <div class="row">
+                    <div class="col-xl-8 mx-auto my-2">
+                        <video controls
+                               loading="lazy"
+                               preload="none"
+                               controlsList="nodownload"
+                               poster="~/Content/images/experiences/24Notion_CaseStudy_Teaser_1280_tbr.jpg"
+                               style="width: 100%;">
+                            <source src="~/Content/videos/experiences/24Notion_CaseStudy_Teaser_1280_tbr.webm" type="video/webm" />
                             Video tag is not supported in this browser.
                         </video>
                     </div>

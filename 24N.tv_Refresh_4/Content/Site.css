@@ -213,7 +213,7 @@ textarea {
 ----------------------*/
 nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 
-#page #contenttop { height: 10.5vw; margin-top: -10.5vw; }
+/*#page #contenttop { height: 10.5vw; margin-top: -10.5vw; }*/
 
 #footsection1 { color: #FFF; background-color: #000; }
 #footsection1 #footcities, 
@@ -354,7 +354,7 @@ nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 #page.home .section-block~.section-block .content-area { top: inherit; bottom: 40px; }
 #page.home .section-block~.section-block .content-area .details { font-size: 22px; font-size: 1.8vw; position: relative; }
 #page.home .section-block~.section-block .content-area .sectionnav { right: 0px; bottom: 1.4vw; position: absolute; }
-#page.home #_video-nrf.section-block .image-area {
+#page.home #_video_nrf.section-block .image-area {
     background-image: url('/content/images/home/video_nike_nrf.jpg');
     background-size: cover;
     height: 55vw;
