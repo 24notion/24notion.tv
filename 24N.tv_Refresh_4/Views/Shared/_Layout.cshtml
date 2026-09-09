@@ -113,7 +113,8 @@
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
                     if (target.length) {
-                        $('html, body').animate({ scrollTop: target.offset().top }, 250, 'easeOutCubic');
+                        target = $(target).find(".pg-section-header").length ? $(target).find(".pg-section-header") : target;
+                        $('html, body').animate({ scrollTop: target.offset().top - $("#menu").outerHeight() }, 250, 'easeOutCubic');
                         return false;
                     }
                 }

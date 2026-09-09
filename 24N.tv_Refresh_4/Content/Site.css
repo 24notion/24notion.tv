@@ -213,7 +213,7 @@ textarea {
 ----------------------*/
 nav#menu { border-bottom: 1px solid rgba(224, 224, 224, .6); }
 
-#page #contenttop { height: 10.5vw; margin-top: -10.5vw; }
+/*#page #contenttop { height: 10.5vw; margin-top: -10.5vw; }*/
 
 #footsection1 { color: #FFF; background-color: #000; }
 #footsection1 #footcities, 
